@@ -1,7 +1,7 @@
 import './PlanItem.css';
 
 const PlanItem = ({ data, uniqueKey, className, depth = 0, parent = null, item = 'Plans' }) => {
-  if (data === null || !Array.isArray(data)) {
+  if (data === null) {
     return null;
   }
 

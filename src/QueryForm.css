@@ -1,0 +1,39 @@
+.queryForm {
+  font-size: calc(10px + 2vmin);
+  margin-top: 1rem;
+}
+
+.queryForm label {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: .5rem;
+}
+
+.queryForm textarea {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: .5rem;
+  width: 40vw;
+  min-width: 40vw;
+  min-height: 15vw;
+  background-color: black;
+  color: pink;
+}
+
+.queryForm input[type="submit"] {
+  font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+  display: block;
+  margin: 0 auto;
+  font-size: calc(7px + 1vmin);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .5rem;
+  margin-bottom: 1rem;
+}
+
+code {
+  text-align: left;
+  font-size: calc(7px + 1vmin);
+  width: 40vw;
+  min-width: 40vw;
+}	
