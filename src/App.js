@@ -1,28 +1,22 @@
 import './App.css';
-import PlanItem from './PlanItem.js';
+import Plan from './Plan.js';
 import QueryForm from './QueryForm.js';
 import './QueryForm.css';
 import React, { useState } from 'react';
 
 function App() {
-  const [queryPlan, setQueryPlan] = useState(null);
+  const [queryPlan, setQueryPlan] = useState([]);
   const getQueryPlan = (data) => {
     let j = null;
 
     try {
       j = JSON.parse(data);
     } catch (e) {
-      j = null;
+      j = [];
     }
 
-    if (!Array.isArray(j) || typeof j[0] === 'undefined' || !j[0].hasOwnProperty('Plan')) {
-      setQueryPlan(j);
-      return;
-    }
-
-    setQueryPlan(j[0]['Plan']);
+		setQueryPlan(j);
   };
-  const k = 'root';
 
   return (
     <div className="App">
@@ -35,7 +29,7 @@ function App() {
           Time (ms) per unit = (Total Milliseconds) / (Total Cost)<br />
           Memory used = (rows * width)/1000<br />
         </code>
-        <PlanItem data={ queryPlan } parent={ null } uniqueKey={ k } key={ k } className="planItem" />
+        <Plan data={ queryPlan } />
       </header>
     </div>
   );
