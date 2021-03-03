@@ -27,7 +27,8 @@ function App() {
           Total Cost = cost = (XXXX.XX .. YYYY.YY) = (YYYY.YY - XXXX.XX)<br />
           Total Milliseconds = ("actual time" (2nd value - 1st value I assume) * loops)<br />
           Time (ms) per unit = (Total Milliseconds) / (Total Cost)<br />
-          Memory used = (rows * width)/1000<br />
+          Memory used = (rows * width)/1000<br /><br />
+          Made by Zenen Jaimes<br />
         </code>
         <Plan data={ queryPlan } />
       </header>
