@@ -9,7 +9,7 @@ const QueryForm = ({ name, handler, label = 'PG Query Plan JSON', placeholder = 
 
   return (
     <form onSubmit={ handleSubmit } className="queryForm">
-      <label for="json">
+      <label htmlFor="json">
         { label }
       </label>
       <textarea id="json" ref={ textarea } placeholder={ placeholder }></textarea>

@@ -15,7 +15,7 @@ function App() {
       j = null;
     }
 
-    if (!Array.isArray(j) || typeof(j[0]) === null || !j[0].hasOwnProperty('Plan')) {
+    if (!Array.isArray(j) || typeof j[0] === 'undefined' || !j[0].hasOwnProperty('Plan')) {
       setQueryPlan(j);
       return;
     }
