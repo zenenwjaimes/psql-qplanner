@@ -1,22 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import PlanItem from './PlanItem.js';
+import PlanItem from './.js';
 
 function App() {
+	const res = null;
+	const k = 'root';
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+				<PlanItem data={ res } parent={ null } uniqueKey={ k } key={ k } className="planItem" />
       </header>
     </div>
   );
