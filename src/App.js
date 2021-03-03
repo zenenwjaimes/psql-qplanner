@@ -1,6 +1,5 @@
 import './App.css';
 import PlanItem from './PlanItem.js';
-import PlanItem from './.js';
 
 function App() {
 	const res = null;
